@@ -1066,7 +1066,7 @@
             <span class="api-doc-pill api-doc-pill--muted">BASE 已配置</span>
           </div>
           <p class="api-doc-lead">
-            示例中 <code class="inline">BASE</code> 为 <code class="inline">http://img-convert.cs.icbc</code>；本地文件路径请按环境修改。
+            示例中 <code class="inline">BASE</code> 为 <code class="inline">http://img-convert.cs.ixbc</code>；本地文件路径请按环境修改。
             下方可按语言切换示例；每段代码右上角可<strong>一键复制</strong>（纯文本，无 HTML 标签）。
             运行要求：Node <strong>18+</strong>；Python 需 <code class="inline">requests</code>。
           </p>
@@ -1087,7 +1087,7 @@
               <span class="api-code-lang">Node.js</span>
               <button type="button" class="api-copy-btn" aria-label="复制此段 Node.js 示例">复制</button>
             </div>
-            <pre class="api-ex api-ex-nodejs">const BASE = "http://img-convert.cs.icbc";
+            <pre class="api-ex api-ex-nodejs">const BASE = "http://img-convert.cs.ixbc";
 
 (async () => {
   const h = await fetch(BASE + "/api/health");
@@ -1101,7 +1101,7 @@
               <span class="api-code-lang">curl</span>
               <button type="button" class="api-copy-btn" aria-label="复制此段 curl 示例">复制</button>
             </div>
-            <pre class="api-ex api-ex-curl">BASE=http://img-convert.cs.icbc
+            <pre class="api-ex api-ex-curl">BASE=http://img-convert.cs.ixbc
 curl -sS "$BASE/api/health"
 curl -sS "$BASE/api/"</pre>
           </div>
@@ -1112,7 +1112,7 @@ curl -sS "$BASE/api/"</pre>
             </div>
             <pre class="api-ex api-ex-python">import requests
 
-BASE = "http://img-convert.cs.icbc"
+BASE = "http://img-convert.cs.ixbc"
 print(requests.get(f"{BASE}/api/health").json())
 print(requests.get(f"{BASE}/api/").json())</pre>
           </div>
@@ -1125,7 +1125,7 @@ print(requests.get(f"{BASE}/api/").json())</pre>
               <span class="api-code-lang">Node.js</span>
               <button type="button" class="api-copy-btn" aria-label="复制此段 Node.js 示例">复制</button>
             </div>
-            <pre class="api-ex api-ex-nodejs">const BASE = "http://img-convert.cs.icbc";
+            <pre class="api-ex api-ex-nodejs">const BASE = "http://img-convert.cs.ixbc";
 const fs = require("fs");
 const { Blob } = require("buffer");
 
@@ -1143,7 +1143,7 @@ const { Blob } = require("buffer");
               <span class="api-code-lang">curl</span>
               <button type="button" class="api-copy-btn" aria-label="复制此段 curl 示例">复制</button>
             </div>
-            <pre class="api-ex api-ex-curl">BASE=http://img-convert.cs.icbc
+            <pre class="api-ex api-ex-curl">BASE=http://img-convert.cs.ixbc
 curl -sS -F "file=@./photo.png" "$BASE/api/image/to-base64"</pre>
           </div>
           <div class="api-code-block api-ex-python">
@@ -1153,7 +1153,7 @@ curl -sS -F "file=@./photo.png" "$BASE/api/image/to-base64"</pre>
             </div>
             <pre class="api-ex api-ex-python">import requests
 
-BASE = "http://img-convert.cs.icbc"
+BASE = "http://img-convert.cs.ixbc"
 with open("photo.png", "rb") as f:
     r = requests.post(f"{BASE}/api/image/to-base64", files={"file": f})
 print(r.json())</pre>
@@ -1167,7 +1167,7 @@ print(r.json())</pre>
               <span class="api-code-lang">Node.js</span>
               <button type="button" class="api-copy-btn" aria-label="复制此段 Node.js 示例">复制</button>
             </div>
-            <pre class="api-ex api-ex-nodejs">const BASE = "http://img-convert.cs.icbc";
+            <pre class="api-ex api-ex-nodejs">const BASE = "http://img-convert.cs.ixbc";
 const fs = require("fs");
 
 (async () => {
@@ -1186,7 +1186,7 @@ const fs = require("fs");
               <span class="api-code-lang">curl</span>
               <button type="button" class="api-copy-btn" aria-label="复制此段 curl 示例">复制</button>
             </div>
-            <pre class="api-ex api-ex-curl">BASE=http://img-convert.cs.icbc
+            <pre class="api-ex api-ex-curl">BASE=http://img-convert.cs.ixbc
 curl -sS -H "Content-Type: application/json" \
   -d '{"dataUrl":"data:image/png;base64,iVBORw0KGgoAAAANS..."}' \
   "$BASE/api/base64/to-image" -o decoded.png</pre>
@@ -1198,7 +1198,7 @@ curl -sS -H "Content-Type: application/json" \
             </div>
             <pre class="api-ex api-ex-python">import requests
 
-BASE = "http://img-convert.cs.icbc"
+BASE = "http://img-convert.cs.ixbc"
 r = requests.post(
     f"{BASE}/api/base64/to-image",
     json={"dataUrl": "data:image/png;base64,iVBORw0KGgoAAAANS..."},
@@ -1214,7 +1214,7 @@ open("decoded.png", "wb").write(r.content)</pre>
               <span class="api-code-lang">Node.js</span>
               <button type="button" class="api-copy-btn" aria-label="复制此段 Node.js 示例">复制</button>
             </div>
-            <pre class="api-ex api-ex-nodejs">const BASE = "http://img-convert.cs.icbc";
+            <pre class="api-ex api-ex-nodejs">const BASE = "http://img-convert.cs.ixbc";
 
 (async () => {
   const svg = `&lt;svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"&gt;&lt;rect width="64" height="64" fill="#34d399"/&gt;&lt;/svg&gt;`;
@@ -1231,7 +1231,7 @@ open("decoded.png", "wb").write(r.content)</pre>
               <span class="api-code-lang">curl</span>
               <button type="button" class="api-copy-btn" aria-label="复制此段 curl 示例">复制</button>
             </div>
-            <pre class="api-ex api-ex-curl">BASE=http://img-convert.cs.icbc
+            <pre class="api-ex api-ex-curl">BASE=http://img-convert.cs.ixbc
 curl -sS -H "Content-Type: application/json" \
   --data-binary @- "$BASE/api/svg/to-png" -o out.png &lt;&lt;'EOF'
 {"svg":"&lt;svg xmlns=\"http://www.w3.org/2000/svg\" width=\"64\" height=\"64\"&gt;&lt;rect width=\"64\" height=\"64\" fill=\"#34d399\"/&gt;&lt;/svg&gt;"}
@@ -1244,7 +1244,7 @@ EOF</pre>
             </div>
             <pre class="api-ex api-ex-python">import requests
 
-BASE = "http://img-convert.cs.icbc"
+BASE = "http://img-convert.cs.ixbc"
 svg = """&lt;svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"&gt;&lt;rect width="64" height="64" fill="#34d399"/&gt;&lt;/svg&gt;"""
 r = requests.post(f"{BASE}/api/svg/to-png", json={"svg": svg})
 open("out.png", "wb").write(r.content)</pre>
@@ -1258,7 +1258,7 @@ open("out.png", "wb").write(r.content)</pre>
               <span class="api-code-lang">Node.js</span>
               <button type="button" class="api-copy-btn" aria-label="复制此段 Node.js 示例">复制</button>
             </div>
-            <pre class="api-ex api-ex-nodejs">const BASE = "http://img-convert.cs.icbc";
+            <pre class="api-ex api-ex-nodejs">const BASE = "http://img-convert.cs.ixbc";
 const fs = require("fs");
 const { Blob } = require("buffer");
 
@@ -1278,7 +1278,7 @@ const { Blob } = require("buffer");
               <span class="api-code-lang">curl</span>
               <button type="button" class="api-copy-btn" aria-label="复制此段 curl 示例">复制</button>
             </div>
-            <pre class="api-ex api-ex-curl">BASE=http://img-convert.cs.icbc
+            <pre class="api-ex api-ex-curl">BASE=http://img-convert.cs.ixbc
 curl -sS -F "file=@./photo.jpg" -F "width=1024" -F "height=768" \
   "$BASE/api/image/to-svg-wrap" -o wrapped.svg</pre>
           </div>
@@ -1289,7 +1289,7 @@ curl -sS -F "file=@./photo.jpg" -F "width=1024" -F "height=768" \
             </div>
             <pre class="api-ex api-ex-python">import requests
 
-BASE = "http://img-convert.cs.icbc"
+BASE = "http://img-convert.cs.ixbc"
 with open("photo.jpg", "rb") as f:
     r = requests.post(
         f"{BASE}/api/image/to-svg-wrap",
@@ -1307,7 +1307,7 @@ open("wrapped.svg", "w", encoding="utf-8").write(r.text)</pre>
               <span class="api-code-lang">Node.js</span>
               <button type="button" class="api-copy-btn" aria-label="复制此段 Node.js 示例">复制</button>
             </div>
-            <pre class="api-ex api-ex-nodejs">const BASE = "http://img-convert.cs.icbc";
+            <pre class="api-ex api-ex-nodejs">const BASE = "http://img-convert.cs.ixbc";
 const fs = require("fs");
 const { Blob } = require("buffer");
 
@@ -1327,7 +1327,7 @@ const { Blob } = require("buffer");
               <span class="api-code-lang">curl</span>
               <button type="button" class="api-copy-btn" aria-label="复制此段 curl 示例">复制</button>
             </div>
-            <pre class="api-ex api-ex-curl">BASE=http://img-convert.cs.icbc
+            <pre class="api-ex api-ex-curl">BASE=http://img-convert.cs.ixbc
 curl -sS -F "file=@./large.png" -F "maxEdge=1600" -F "format=jpeg" \
   "$BASE/api/image/compress" -o small.jpg</pre>
           </div>
@@ -1338,7 +1338,7 @@ curl -sS -F "file=@./large.png" -F "maxEdge=1600" -F "format=jpeg" \
             </div>
             <pre class="api-ex api-ex-python">import requests
 
-BASE = "http://img-convert.cs.icbc"
+BASE = "http://img-convert.cs.ixbc"
 with open("large.png", "rb") as f:
     r = requests.post(
         f"{BASE}/api/image/compress",
@@ -1356,7 +1356,7 @@ open("small.jpg", "wb").write(r.content)</pre>
               <span class="api-code-lang">Node.js</span>
               <button type="button" class="api-copy-btn" aria-label="复制此段 Node.js 示例">复制</button>
             </div>
-            <pre class="api-ex api-ex-nodejs">const BASE = "http://img-convert.cs.icbc";
+            <pre class="api-ex api-ex-nodejs">const BASE = "http://img-convert.cs.ixbc";
 const fs = require("fs");
 const { Blob } = require("buffer");
 
@@ -1377,7 +1377,7 @@ const { Blob } = require("buffer");
               <span class="api-code-lang">curl</span>
               <button type="button" class="api-copy-btn" aria-label="复制此段 curl 示例">复制</button>
             </div>
-            <pre class="api-ex api-ex-curl">BASE=http://img-convert.cs.icbc
+            <pre class="api-ex api-ex-curl">BASE=http://img-convert.cs.ixbc
 curl -sS -F "file=@./photo.png" -F "format=webp" -F "quality=85" \
   "$BASE/api/image/convert" -o out.webp</pre>
           </div>
@@ -1388,7 +1388,7 @@ curl -sS -F "file=@./photo.png" -F "format=webp" -F "quality=85" \
             </div>
             <pre class="api-ex api-ex-python">import requests
 
-BASE = "http://img-convert.cs.icbc"
+BASE = "http://img-convert.cs.ixbc"
 with open("photo.png", "rb") as f:
     r = requests.post(
         f"{BASE}/api/image/convert",
